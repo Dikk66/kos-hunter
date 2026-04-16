@@ -5,7 +5,13 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "nest build", 
+    "start:prod": "node dist/main", 
+    "start:dev": "nest start --watch",
+    "prisma:deploy": "prisma migrate deploy",
+    "postinstall": "prisma generate"
+
   },
   "keywords": [],
   "author": "Dicky",

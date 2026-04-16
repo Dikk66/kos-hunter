@@ -2,9 +2,9 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 
-import authRoutes from "./routes/authRoutes.js";
-import kosRoutes from "./routes/kosRoutes.js";
-import bookingRoutes from "./routes/bookingRoutes.js";
+import authRoutes from "./routes/auth.Routes.js";
+import kosRoutes from "./routes/kos.Routes.js";
+import bookingRoutes from "./routes/booking.Routes.js";
 
 dotenv.config();
 

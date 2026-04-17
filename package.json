@@ -5,8 +5,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "nest build",
+    "build": "echo build skip",
     "start:prod": "node dist/main",
     "start:dev": "nest start --watch",
     "prisma:deploy": "prisma migrate deploy",

@@ -6,24 +6,25 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "nest build", 
-    "start:prod": "node dist/main", 
+    "build": "nest build",
+    "start:prod": "node dist/main",
     "start:dev": "nest start --watch",
     "prisma:deploy": "prisma migrate deploy",
     "postinstall": "prisma generate"
-
   },
   "keywords": [],
   "author": "Dicky",
   "license": "ISC",
   "dependencies": {
+    "@nestjs/swagger": "^11.3.0",
     "@prisma/client": "^5.22.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.2",
-    "prisma": "^5.22.0"
+    "prisma": "^5.22.0",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
